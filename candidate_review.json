@@ -1,0 +1,354 @@
+{
+  "profile": {
+    "candidate_facts": [
+      "Candidate name is Arun Kumar",
+      "Located in Chennai, India",
+      "Pursued Bachelor of Computer Science at XYZ University (2022 - 2026)",
+      "Worked as Software Developer Intern at ABC Technologies (2025 - 2026)"
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "claimed_level": "Experienced",
+        "evidence_ids": [
+          "E4"
+        ]
+      },
+      {
+        "name": "FastAPI",
+        "claimed_level": "Proficient",
+        "evidence_ids": [
+          "E4"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "claimed_level": "Proficient",
+        "evidence_ids": [
+          "E4"
+        ]
+      },
+      {
+        "name": "REST APIs",
+        "claimed_level": "Experienced",
+        "evidence_ids": [
+          "E3"
+        ]
+      },
+      {
+        "name": "Docker",
+        "claimed_level": "Proficient",
+        "evidence_ids": [
+          "E4"
+        ]
+      },
+      {
+        "name": "GitHub Actions",
+        "claimed_level": "Proficient",
+        "evidence_ids": [
+          "E4"
+        ]
+      }
+    ],
+    "experience": [
+      "Software Developer Intern at ABC Technologies (2025 - 2026)"
+    ],
+    "claims": [
+      {
+        "claim": "Built a Python REST API for internal application with authentication and automated tests",
+        "status": "supported",
+        "evidence_ids": [
+          "E3"
+        ]
+      },
+      {
+        "claim": "Diagnosed and resolved a database connection issue by reconfiguring the connection pool and adding monitoring",
+        "status": "supported",
+        "evidence_ids": [
+          "E5"
+        ]
+      },
+      {
+        "claim": "Built a multi-agent candidate assessment system using Gemini",
+        "status": "supported",
+        "evidence_ids": [
+          "E6"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "source": "resume",
+        "quote": "Software Developer Intern",
+        "fact": "Held Software Developer Intern position at ABC Technologies from 2025 to 2026",
+        "location": "EXPERIENCE"
+      },
+      {
+        "evidence_id": "E2",
+        "source": "resume",
+        "quote": "Bachelor of Computer Science",
+        "fact": "Enrolled in Bachelor of Computer Science at XYZ University from 2022 to 2026",
+        "location": "EDUCATION"
+      },
+      {
+        "evidence_id": "E3",
+        "source": "transcript",
+        "quote": "I built a Python REST API for our internal application. I designed the API endpoints, implemented authentication, and wrote automated tests.",
+        "fact": "Designed endpoints, implemented authentication, and wrote automated tests for an internal Python REST API",
+        "location": "TRANSCRIPT"
+      },
+      {
+        "evidence_id": "E4",
+        "source": "transcript",
+        "quote": "Python, FastAPI, PostgreSQL, Docker and GitHub Actions.",
+        "fact": "Utilized Python, FastAPI, PostgreSQL, Docker, and GitHub Actions for project implementation",
+        "location": "TRANSCRIPT"
+      },
+      {
+        "evidence_id": "E5",
+        "source": "transcript",
+        "quote": "We had a database connection problem. I investigated the logs, identified the connection pool configuration as the cause, fixed it, and added monitoring to detect similar problems.",
+        "fact": "Investigated database connection issues, reconfigured connection pool, and set up monitoring",
+        "location": "TRANSCRIPT"
+      },
+      {
+        "evidence_id": "E6",
+        "source": "resume",
+        "quote": "Built a multi-agent candidate assessment system using Gemini with Technical, HR/Culture, Hiring Manager and Skeptic agents.",
+        "fact": "Developed an AI Candidate Review System using Gemini multi-agent setup",
+        "location": "PROJECTS"
+      }
+    ]
+  },
+  "independent_reviews": {
+    "Technical Agent": {
+      "agent": "Technical Agent",
+      "assessment": "Arun Kumar demonstrates strong foundational backend development capabilities suitable for a junior Python backend engineer role. He exhibits hands-on experience designing REST APIs with FastAPI, writing automated tests, containerizing applications with Docker, establishing CI/CD with GitHub Actions, and performing root-cause database debugging. However, his professional experience is limited to an internship, and direct experience managing public cloud deployments (e.g., AWS/GCP/Azure) beyond CI/CD tooling is not fully detailed.",
+      "confidence": 0.85,
+      "strengths": [
+        "Demonstrated experience in Python REST API development, endpoint design, authentication, and automated testing.",
+        "Proven troubleshooting and system maintenance skills in identifying database connection pool bottlenecks and adding monitoring.",
+        "Hands-on technical stack directly aligned with modern backend API development and containerized workflows."
+      ],
+      "concerns": [
+        "Overall industry experience is restricted to an internship role while completing undergraduate studies."
+      ],
+      "evidence_ids": [
+        "E3",
+        "E5",
+        "E4",
+        "E1"
+      ],
+      "evidence_quotes": [
+        "I built a Python REST API for our internal application. I designed the API endpoints, implemented authentication, and wrote automated tests.",
+        "We had a database connection problem. I investigated the logs, identified the connection pool configuration as the cause, fixed it, and added monitoring to detect similar problems.",
+        "Python, FastAPI, PostgreSQL, Docker and GitHub Actions.",
+        "Software Developer Intern"
+      ],
+      "follow_up_questions": [
+        "How did you structure automated integration and unit tests for your FastAPI endpoints?",
+        "What specific parameters were reconfigured in the PostgreSQL connection pool, and what metrics were monitored?",
+        "What experience do you have deploying Docker containers to cloud providers such as AWS, GCP, or Azure?"
+      ]
+    },
+    "HR / Culture Agent": {
+      "agent": "HR / Culture Agent",
+      "assessment": "Arun Kumar demonstrates strong personal ownership and proactive accountability, evidenced by end-to-end delivery of REST APIs with automated testing and diagnosing root causes of infrastructure issues followed by preventive monitoring. Explicit evidence regarding team collaboration and communication styles remains limited based on the provided material.",
+      "confidence": 0.85,
+      "strengths": [
+        "Demonstrates strong ownership and proactive accountability by investigating database issues, resolving connection pool configurations, and implementing monitoring to prevent recurring failures.",
+        "Takes individual ownership of complete API feature delivery, including design, implementation, and testing."
+      ],
+      "concerns": [],
+      "evidence_ids": [
+        "E5",
+        "E3"
+      ],
+      "evidence_quotes": [
+        "We had a database connection problem. I investigated the logs, identified the connection pool configuration as the cause, fixed it, and added monitoring to detect similar problems.",
+        "I built a Python REST API for our internal application. I designed the API endpoints, implemented authentication, and wrote automated tests."
+      ],
+      "follow_up_questions": [
+        "Could you describe a scenario where you had to collaborate with cross-functional team members or frontend developers to align on API specifications?",
+        "How do you approach communicating technical decisions, trade-offs, or incidents to team members and stakeholders?"
+      ]
+    },
+    "Hiring Manager Agent": {
+      "agent": "Hiring Manager Agent",
+      "assessment": "Arun Kumar shows solid foundational alignment for a Python backend engineer role, with hands-on experience in building Python REST APIs, implementing authentication, writing automated tests, and utilizing FastAPI, Docker, and GitHub Actions. His background directly addresses API creation and testing requirements. However, while he demonstrates knowledge of containerization (Docker) and CI/CD (GitHub Actions), explicit experience with direct cloud deployment (e.g., AWS, GCP, Azure) is absent from the provided evidence, and his total professional experience is currently limited to an internship.",
+      "confidence": 0.85,
+      "strengths": [
+        "Direct experience building Python REST APIs with automated testing and authentication.",
+        "Relevant backend and DevOps toolset including Python, FastAPI, Docker, and GitHub Actions."
+      ],
+      "concerns": [
+        "Candidate's formal experience is restricted to an internship level, which may impact scope of ownership.",
+        "Lack of explicit evidence regarding hands-on deployment and management on public cloud platforms."
+      ],
+      "evidence_ids": [
+        "E3",
+        "E4",
+        "E1",
+        "E4"
+      ],
+      "evidence_quotes": [
+        "I built a Python REST API for our internal application. I designed the API endpoints, implemented authentication, and wrote automated tests.",
+        "Python, FastAPI, PostgreSQL, Docker and GitHub Actions.",
+        "Software Developer Intern",
+        "Python, FastAPI, PostgreSQL, Docker and GitHub Actions."
+      ],
+      "follow_up_questions": [
+        "What public cloud platforms (e.g., AWS, GCP, Azure) have you used to deploy containerized Python applications?",
+        "Can you describe your experience setting up and managing automated deployment pipelines to production environments?"
+      ]
+    },
+    "Skeptic Agent": {
+      "agent": "Skeptic Agent",
+      "assessment": "Arun Kumar demonstrates relevant foundational skills for a junior Python Backend Engineer, having built REST APIs with authentication, automated tests, and CI/CD tools like Docker and GitHub Actions. However, as an intern scheduled to graduate in 2026, his commercial experience is limited, and specific hands-on cloud deployment experience (e.g., AWS, GCP, or Azure) beyond containerization tools remains unverified.",
+      "confidence": 0.75,
+      "strengths": [
+        "Has practical experience building Python REST APIs with authentication and automated tests directly aligned with backend engineering duties.",
+        "Hands-on experience with core backend, containerization, and CI/CD technologies.",
+        "Demonstrates practical troubleshooting skills in database operations and monitoring."
+      ],
+      "concerns": [
+        "Professional experience is limited to an internship while completing undergraduate studies.",
+        "Lack of explicit evidence regarding hands-on deployment to major public cloud providers despite role calling for cloud deployment responsibilities."
+      ],
+      "evidence_ids": [
+        "E3",
+        "E4",
+        "E5",
+        "E1",
+        "E4"
+      ],
+      "evidence_quotes": [
+        "I built a Python REST API for our internal application. I designed the API endpoints, implemented authentication, and wrote automated tests.",
+        "Python, FastAPI, PostgreSQL, Docker and GitHub Actions.",
+        "We had a database connection problem. I investigated the logs, identified the connection pool configuration as the cause, fixed it, and added monitoring to detect similar problems.",
+        "Software Developer Intern",
+        "Python, FastAPI, PostgreSQL, Docker and GitHub Actions."
+      ],
+      "follow_up_questions": [
+        "What public cloud platforms (e.g., AWS, GCP, Azure) have you used to host containerized applications, and how did you handle cloud infrastructure deployment?",
+        "Which testing frameworks (e.g., PyTest, Unittest) did you use for the Python REST API, and what types of tests (unit, integration, end-to-end) were implemented?"
+      ]
+    }
+  },
+  "debate": {
+    "Technical Agent": {
+      "agent": "Technical Agent",
+      "responding_to": "Skeptic Agent",
+      "agrees": [
+        "Skeptic Agent's observation that Arun's commercial experience is restricted to a developer internship (E1) and lacks explicit evidence of managing or deploying applications to major public cloud providers (AWS, GCP, or Azure), despite knowing Docker and GitHub Actions (E4)."
+      ],
+      "disagrees": [],
+      "changed_view": "No, my view has not changed. I maintain that Arun is a strong candidate for a junior Python backend role given his practical API implementation (E3) and database troubleshooting skills (E5), though his public cloud deployment experience needs verification.",
+      "new_confidence": 0.85,
+      "cited_evidence_ids": [
+        "E1",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "debate_statement": "I agree with Skeptic Agent's critique regarding the lack of verified public cloud deployment experience. While Arun demonstrates practical strength in building FastAPI REST endpoints, implementing authentication, writing tests (E3), and configuring Docker and GitHub Actions pipelines (E4), his background is limited to an internship (E1). Containerization and local CI/CD pipelines are strong indicators of modern backend readiness, but hands-on cloud environment provisioning (e.g. AWS/GCP) remains unproven and should be explicitly probed in technical follow-up questions."
+    },
+    "HR / Culture Agent": {
+      "agent": "HR / Culture Agent",
+      "responding_to": "Hiring Manager Agent",
+      "agrees": [
+        "The candidate's formal industry experience is currently limited to a Software Developer Intern role."
+      ],
+      "disagrees": [
+        "The assertion that internship status necessarily limits the scope of candidate ownership and initiative."
+      ],
+      "changed_view": "No, my assessment remains unchanged because the candidate's demonstrated behaviors highlight proactive accountability despite their early-career stage.",
+      "new_confidence": 0.85,
+      "cited_evidence_ids": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "debate_statement": "I am responding to Hiring Manager Agent's point that the candidate's internship status (E1) may impact his scope of ownership. While I agree that his formal tenure is early-career, I disagree that it has constrained his proactive ownership in practice. As evidenced in E5, when faced with a database issue, Arun independently investigated logs, reconfigured the PostgreSQL connection pool, and established preventive monitoring. Additionally, E3 demonstrates end-to-end responsibility in designing endpoints, implementing authentication, and writing automated tests for a REST API. From a cultural and behavioral standpoint, this shows strong personal accountability and initiative that go well beyond routine intern task execution."
+    },
+    "Hiring Manager Agent": {
+      "agent": "Hiring Manager Agent",
+      "responding_to": "Skeptic Agent",
+      "agrees": [
+        "Skeptic Agent's assessment that explicit experience with public cloud platforms like AWS, GCP, or Azure is unverified despite proficiency in Docker and GitHub Actions."
+      ],
+      "disagrees": [],
+      "changed_view": "My view changed slightly regarding the confidence calibration; while I still consider Arun a strong junior candidate based on API and testing skills, I acknowledge Skeptic Agent's point that the absence of verified public cloud deployment experience directly impacts his readiness for end-to-end cloud deployment responsibilities.",
+      "new_confidence": 0.8,
+      "cited_evidence_ids": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "debate_statement": "I agree with Skeptic Agent's point that while Arun exhibits solid technical skills in Python REST API development, Docker containerization, and GitHub Actions CI/CD (E3, E4), his profile lacks explicit evidence of deploying and managing applications on public cloud platforms like AWS, GCP, or Azure. Given that his professional experience is currently limited to a software developer internship (E1), this cloud deployment gap means he will require mentorship on production cloud infrastructure, justifying a slightly more cautious confidence rating of 0.80."
+    },
+    "Skeptic Agent": {
+      "agent": "Skeptic Agent",
+      "responding_to": "Technical Agent",
+      "agrees": [
+        "Technical Agent's observation that direct experience managing public cloud deployments (e.g., AWS, GCP, Azure) beyond Docker and GitHub Actions is missing from the evidence."
+      ],
+      "disagrees": [],
+      "changed_view": "No, my view remains unchanged because the evidence confirms a gap in explicit public cloud deployment experience despite solid containerization and CI/CD skills.",
+      "new_confidence": 0.75,
+      "cited_evidence_ids": [
+        "E1",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "debate_statement": "I agree with Technical Agent's point that while Arun Kumar demonstrates good foundational skills in FastAPI, Docker, and GitHub Actions (E3, E4), his background lacks explicit proof of deploying and managing applications on public cloud platforms such as AWS, GCP, or Azure. Given his career stage as a Software Developer Intern (E1), verifying whether his containerization experience extends to live cloud environments remains essential before assessing him for cloud deployment responsibilities."
+    }
+  },
+  "final_assessment": {
+    "overall_assessment": "Arun Kumar demonstrates strong foundational technical capabilities for a junior Python backend engineer role, with direct evidence of building REST APIs with FastAPI, implementing authentication, writing automated tests, and diagnosing database connection issues. However, while he shows proficiency with Docker and GitHub Actions, there is a clear evidence gap regarding hands-on cloud deployment on public cloud providers (e.g., AWS, GCP, Azure), which is a key requirement of the role. Furthermore, his commercial background is currently restricted to an internship level.",
+    "confidence": "medium",
+    "strongest_evidence": [
+      {
+        "evidence_id": "E3",
+        "reason": "Directly confirms practical experience in building Python REST API endpoints, implementing authentication, and writing automated tests."
+      },
+      {
+        "evidence_id": "E5",
+        "reason": "Demonstrates strong proactive ownership and root-cause troubleshooting by resolving database connection pool issues and adding monitoring."
+      },
+      {
+        "evidence_id": "E4",
+        "reason": "Validates relevant technology stack usage including Python, FastAPI, PostgreSQL, Docker, and GitHub Actions."
+      }
+    ],
+    "strengths": [
+      "Practical experience developing Python REST APIs with authentication and automated unit/integration testing.",
+      "Demonstrated proactive troubleshooting and operational ownership in diagnosing database connection pooling issues and implementing preventive monitoring.",
+      "Hands-on usage of containerization (Docker) and CI/CD pipeline tools (GitHub Actions)."
+    ],
+    "concerns": [
+      "Lack of explicit evidence regarding hands-on deployment, hosting, or infrastructure management on public cloud platforms (AWS, GCP, or Azure).",
+      "Total professional work experience is limited to a single developer internship while completing undergraduate studies."
+    ],
+    "unresolved_disagreements": [
+      "Disagreement regarding candidate ownership scope: HR Agent views the database connection fix as proof of high individual accountability, whereas Hiring Manager and Skeptic Agents view internship status as a structural constraint on proven production scope."
+    ],
+    "follow_up_questions": [
+      "What public cloud platforms (e.g., AWS, GCP, Azure) have you used to host containerized applications, and how did you manage deployment?",
+      "Which testing frameworks (e.g., PyTest) did you use for the FastAPI application, and how were tests integrated into the GitHub Actions CI/CD pipeline?",
+      "What specific parameters were reconfigured in the PostgreSQL connection pool, and what metrics were monitored?"
+    ],
+    "evidence_gaps": [
+      "Lack of direct evidence showing deployment or infrastructure management on public cloud providers.",
+      "Limited detail on testing frameworks, code coverage, and test architecture used."
+    ],
+    "human_decision_required": true
+  },
+  "debate_integrity_check": {
+    "passed": true,
+    "rule": "Every agent directly responds to a named peer after independent review."
+  },
+  "decision_boundary": "Decision support only. A qualified human reviewer must make the employment decision."
+}
